@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心灵花园</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", 微软雅黑, sans-serif;
+        }
+
+        /* 首图容器样式 */
+        .header-img {
+            width: 100%;
+            height: 400px; /* 首图高度，可根据需求调整 */
+            overflow: hidden;
+        }
+
+        .header-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 保持图片比例，覆盖容器 */
+        }
+
+        /* 导航栏样式 */
+        .nav-bar {
+            background-color: #4a90e2; /* 主色调：柔和的蓝色，贴合心灵治愈主题 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-item {
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-item:hover {
+            background-color: #357abd; /* 鼠标悬浮时的深色效果 */
+            border-radius: 4px;
+        }
+
+        /* 响应式适配：手机端导航栏垂直排列 */
+        @media (max-width: 768px) {
+            .nav-bar {
+                flex-direction: column;
+            }
+            .nav-item {
+                width: 100%;
+                text-align: center;
+                padding: 12px 0;
+            }
+            .header-img {
+                height: 250px; /* 手机端首图高度适配 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 第一行：项目首图 -->
+    <div class="header-img">
+        <!-- 替换为你的项目首图链接，建议使用宽度1920px左右的图片 -->
+        <img src="images/1.png" alt="心灵花园 - 抑郁厌学青少年社会工作服务项目" width="100%" height="300">
+    </div>
+
+    <!-- 第二行：导航栏 -->
+    <nav class="nav-bar">
+        <a href="http://127.0.0.1:8848/%E5%BF%83%E7%81%B5%E8%8A%B1%E5%9B%AD/index.html#home" class="nav-item">首页</a>
+        <a href="http://127.0.0.1:8848/%E6%9C%8D%E5%8A%A1%E6%9D%BF%E5%9D%97/index.html" class="nav-item">服务板块</a>
+        <a href="http://127.0.0.1:8848/%E5%BF%83%E7%81%B5%E8%8A%B1%E5%9B%AD2/index.html" class="nav-item">活动资讯</a>
+        <a href="#about" class="nav-item">关于我们</a>
+    </nav>
+
+    <!-- 以下可扩展各板块内容，示例： -->
+    <div id="home" style="padding: 50px; text-align: center;">
+        <h1>欢迎来到心灵花园</h1>
+        <p>专注于抑郁厌学青少年的社会工作服务，守护每一颗成长的心灵。</p>
+		<p><h4>你好</h4></p>
+    </div>
+	
+</body>
+</html>
