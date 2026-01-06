@@ -3,69 +3,68 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>服务板块</title>
+		<style>
+		        /* 全局样式重置 */
+		        * {
+		            margin: 0;
+		            padding: 0;
+		            box-sizing: border-box;
+		            font-family: "Microsoft YaHei", 微软雅黑, sans-serif;
+		        }
+		
+		        /* 首图容器样式 */
+		        .header-img {
+		            width: 100%;
+		            height: 400px; /* 首图高度，可根据需求调整 */
+		            overflow: hidden;
+		        }
+		
+		        .header-img img {
+		            width: 100%;
+		            height: 100%;
+		            object-fit: cover; /* 保持图片比例，覆盖容器 */
+		        }
+		
+		        /* 导航栏样式 */
+		        .nav-bar {
+		            background-color: #4a90e2; /* 主色调：柔和的蓝色，贴合心灵治愈主题 */
+		            display: flex;
+		            justify-content: center;
+		            align-items: center;
+		            padding: 0 20px;
+		            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		        }
+		
+		        .nav-item {
+		            color: white;
+		            text-decoration: none;
+		            padding: 15px 25px;
+		            font-size: 16px;
+		            transition: background-color 0.3s ease;
+		        }
+		
+		        .nav-item:hover {
+		            background-color: #357abd; /* 鼠标悬浮时的深色效果 */
+		            border-radius: 4px;
+		        }
+		
+		        /* 响应式适配：手机端导航栏垂直排列 */
+		        @media (max-width: 768px) {
+		            .nav-bar {
+		                flex-direction: column;
+		            }
+		            .nav-item {
+		                width: 100%;
+		                text-align: center;
+		                padding: 12px 0;
+		            }
+		            .header-img {
+		                height: 250px; /* 手机端首图高度适配 */
+		            }
+		        }
+		    </style>
 	</head>
 	<body>
-		<style>
-			        /* 全局样式重置 */
-			        * {
-			            margin: 0;
-			            padding: 0;
-			            box-sizing: border-box;
-			            font-family: "Microsoft YaHei", 微软雅黑, sans-serif;
-			        }
-			
-			        /* 首图容器样式 */
-			        .header-img {
-			            width: 100%;
-			            height: 400px; /* 首图高度，可根据需求调整 */
-			            overflow: hidden;
-			        }
-			
-			        .header-img img {
-			            width: 100%;
-			            height: 100%;
-			            object-fit: cover; /* 保持图片比例，覆盖容器 */
-			        }
-			
-			        /* 导航栏样式 */
-			        .nav-bar {
-			            background-color: #4a90e2; /* 主色调：柔和的蓝色，贴合心灵治愈主题 */
-			            display: flex;
-			            justify-content: center;
-			            align-items: center;
-			            padding: 0 20px;
-			            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-			        }
-			
-			        .nav-item {
-			            color: white;
-			            text-decoration: none;
-			            padding: 15px 25px;
-			            font-size: 16px;
-			            transition: background-color 0.3s ease;
-			        }
-			
-			        .nav-item:hover {
-			            background-color: #357abd; /* 鼠标悬浮时的深色效果 */
-			            border-radius: 4px;
-			        }
-			
-			        /* 响应式适配：手机端导航栏垂直排列 */
-			        @media (max-width: 768px) {
-			            .nav-bar {
-			                flex-direction: column;
-			            }
-			            .nav-item {
-			                width: 100%;
-			                text-align: center;
-			                padding: 12px 0;
-			            }
-			            .header-img {
-			                height: 250px; /* 手机端首图高度适配 */
-			            }
-			        }
-			    </style>
-			</head>
 		<nav class="nav-bar">
 		    <a href="https://rain1943.github.io/xinlinghy/" class="nav-item">首页</a>
 		    <a href="https://rain1943.github.io/xlhyService-Sector/" class="nav-item">服务板块</a>
@@ -75,6 +74,7 @@
 		<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基地建设</h2>
 	</body>
 </html>
+
 
 
 
